@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical"
+    tools:context="com.variablevisions.aboutme.Description"
+    tools:ignore="MergeRootFrame" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:text="Michael Owusu"
+        android:textColor="@android:color/white"
+        android:textSize="28dp" >
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/faceImageView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity= "center_horizontal"
+        android:layout_weight="1"
+        android:onClick="flipImage"
+        android:src="@drawable/finalback" />
+
+    <Button
+        android:id="@+id/aboutMeButton"
+        android:layout_width="fill_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:onClick="showAboutMessage"
+        android:text="About Me"
+        android:textColor="@android:color/white" >
+
+    </Button>
+
+</LinearLayout>
